@@ -15,9 +15,13 @@ func main() {
 	incrementSalaryOfTheEmployee(&e1)
 	e1.showEmployeeDetails()
 
+	pointer := &e1                //Create a pointer to object.
+	pointer.showEmployeeDetails() //We can directly call the function. It is similar to (*pounter).showEmployeeDetails()
+
 }
 
-// setEmployeeDetails : It fills (*employeeDetails) with the values from the parameters.
+// This function will receive pointer receivers.
+//setEmployeeDetails : It fills (*employeeDetails)  with the values from the parameters.
 // *employeeDetails needed to store the context of the data outside the functions.
 // setEmployeeDetails can access the employee object inside the function.
 func (employee *employeeDetails) setEmployeeDetails(ID int, empName string, age int, salary int) {
