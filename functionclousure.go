@@ -12,6 +12,7 @@ func test() func() int {
 	}
 }
 
+// main func
 func main() {
 	testfunc := test()
 	fmt.Println(testfunc())
