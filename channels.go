@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// Channels are used to send and recive data.
+// Channels are used to send and receive data.
 // data := <-ch get the data from channel
 // ch  <- data Send the data to channel
 func main() {
