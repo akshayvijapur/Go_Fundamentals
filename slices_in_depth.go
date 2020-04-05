@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 
+	//Slices are immutable, Appending a slice will give you new slice.
 	// Case 1: Slice of Slice
 
 	//Create a slice.
