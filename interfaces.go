@@ -35,6 +35,18 @@ func main() {
 	EmployeeManagementSystem(&m1)
 	EmployeeManagementSystem(&e1)
 
+	// or you can also create like this
+
+	var emp Employees
+
+	emp = &m1
+	emp.raiseSalary()
+	emp.showEmployeeDetails()
+
+	emp = &e1
+	emp.raiseSalary()
+	emp.showEmployeeDetails()
+
 }
 
 func EmployeeManagementSystem(e Employees) {
