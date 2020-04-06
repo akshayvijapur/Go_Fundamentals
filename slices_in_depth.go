@@ -29,9 +29,9 @@ func main() {
 	// Length of slice  2
 	// Capacity  of slice  5
 
-	// We can see that capicaty of the slice remains the same. But only length has changed.
+	// We can see that capacity of the slice remains the same. But only length has changed.
 	// This means that original slice is still unmodified.
-	// Slicing here refers to changing of lenght.
+	// Slicing here refers to changing of length.
 
 	//Lets increase the length of slice.
 
@@ -47,7 +47,7 @@ func main() {
 
 	//Now lets change the value of the slice and lets see weather it is reflected in original array.
 
-	testSlice[1] = "twoo" //Assign a new value.
+	testSlice[1] = "two" //Assign a new value.
 
 	// lets expand the slice back to original.
 	testSlice = testSlice[:5]
@@ -56,13 +56,13 @@ func main() {
 	fmt.Println("Capacity  of slice ", cap(testSlice))
 
 	//output
-	// [one twoo three four five]
+	// [one two three four five]
 	// Length of slice  5
 	// Capacity  of slice  5
 
 	// case 2: Creating slice with make
 	// Format:
-	// s := make(sliceName, int len, int capacity
+	// s := make(sliceName, int len, int capacity)
 
 	makeSlice := make([]string, 5, 5)
 	fmt.Println(makeSlice)
@@ -93,7 +93,7 @@ func main() {
 
 	//Even through its capacity is 5 and its has five values but it printed only three values.
 	// Basically slice maintains two variables
-	// Capacity : maximum lenght that array can hold.
+	// Capacity : maximum length that array can hold.
 	// length : current restricted length for array can be operated.
 
 	//lets try to print variable at 4.
